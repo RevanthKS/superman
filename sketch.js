@@ -78,8 +78,6 @@ function draw() {
 
 }
 
-function keyPressed(){
-  if(keyCode === 32){
-      Matter.Body.applyForce(hero.body,hero.body.position,{x:-50,y:-45});
-  }
+function mouseDragged(){
+  Matter.Body.setPosition(hero.body,{x:mouseX, y:mouseY});
 }
